@@ -1,0 +1,8 @@
+version: "3"
+services:
+  eureka:
+    image: markuskarileet/eureka:1.7.0
+    ports:
+      - 8111:8111
+    volumes:
+      - ./conf-example/application.yml:/eureka/application.yml
